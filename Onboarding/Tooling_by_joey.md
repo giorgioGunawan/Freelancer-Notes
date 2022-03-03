@@ -21,6 +21,24 @@
 
 ### Frontend
 - Just locally, point to shared development env
+- Frontend Stack: AngularJS + Typescript + RxJS
+- Two building blocks: Datastore and Bits
+
+#### Datastore
+- Like react's redux - a centralised state management system
+- All frontend component will be only talking to one guy - the datastore
+- All data model stored in datastore
+- You don't manipulate it directly, all frontend component will trigger action and its event driven, so when event happens, operation happens within
+- This is one-way communication (ONE WAY DATA BINDING), not two-way, because you trigger -> make decision -> and then react to what the model says
+- One way data binding is safer
+- Datastore will also wrap up all backend API for developers, and you just have to talk to you datastore
+
+#### Bits
+- Component library -> like google material
+- Not only the look and feel, but also the dynamic (with angular behind)
+- We dont need to think about the nitty gritty details of a button, all of this is centralised and managed by Bits
+- CSS has been made very simple - ALL YOU NEED TO KNOW IS FLEXBOX
+- We try to make the developer experience as simple as possible
 
 ### Version Control
 - Use GIT, connected to phabricator, integrated by Arcanist
